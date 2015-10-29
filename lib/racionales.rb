@@ -49,6 +49,30 @@ def + (other)
 
 end
 
+#Resta de fracciones 
+
+def - (other)
+    
+    denominador=@d*other.d
+    
+    denominadorfinal=denominador/mcm(@d,other.d)
+    
+    
+    
+    fraccion1=denominadorfinal/@d
+    numerador1=fraccion1*@n
+
+    fraccion2=denominadorfinal/other.d
+    numerador2=fraccion2*other.n
+    
+    
+    
+   Racionales.new(numerador1-numerador2,denominadorfinal)
+    
+
+
+end
+
 end
 
 

@@ -16,6 +16,7 @@ class Tc_racionales < Test::Unit::TestCase
         assert_equal("1/1", @inicio.to_s)
         assert_equal("1/2", @medio.to_s)
         assert_equal("7/6", (@medio+@sumas).to_s)
+        assert_equal("-1/6", (@medio-@sumas).to_s)
        
         
         
@@ -26,6 +27,9 @@ class Tc_racionales < Test::Unit::TestCase
         assert_equal("7/6", (@medio+@sumas).to_s)
     end
   
+    def test_resta
         
+        assert_equal("-1/6", (@medio-@sumas).to_s)
+    end    
     
 end
