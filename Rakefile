@@ -14,3 +14,13 @@ desc "Ejecucion de resta"
 task :resta do
     sh "ruby -I. test/test_ruby.rb -n /test_resta/"
 end
+
+desc "Ejecucion de multiplicacion"
+task :multiplicacion do
+    sh "ruby -I. test/test_ruby.rb -n /test_mult/"
+end
+
+desc "Ejecucion de division"
+task :division do
+    sh "ruby -I. test/test_ruby.rb -n /test_div/"
+end

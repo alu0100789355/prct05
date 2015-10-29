@@ -73,6 +73,23 @@ def - (other)
 
 end
 
+#Multiplicacion de fracciones
+
+def * (other)
+    
+    Racionales.new(@n*other.n, @d*other.d)
+    
 end
 
+#Division de fracciones
+
+def / (other)
+    
+
+    Racionales.new(@n*other.d,@d*other.n)
+end
+
+
+end
+#fin del programa
 
